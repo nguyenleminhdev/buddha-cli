@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { program } from 'commander'
 import { source } from './constant'
 import { info, success, exec, primary, error } from './service'
