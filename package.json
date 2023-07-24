@@ -1,0 +1,44 @@
+{
+  "name": "buddha-cli",
+  "version": "0.0.0",
+  "description": "Cli of buddha.ts",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build"
+  ],
+  "keywords": [
+    "typescript",
+    "api",
+    "buddha",
+    "server",
+    "express",
+    "cli"
+  ],
+  "scripts": {
+    "dev": "ts-node-dev test/index.ts",
+    "build": "rimraf ./build && tsc && copyfiles buddha.txt build",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyenleminhdev/buddha-cli.git"
+  },
+  "author": "Andrew Nguyen <nguyenleminhdev@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/async": "^3.2.20",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^18.16.19",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "async": "^3.2.4",
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "lodash": "^4.17.21"
+  }
+}
