@@ -1,12 +1,15 @@
 {
-  "name": "buddha-cli",
-  "version": "0.0.0",
+  "name": "buddha-command",
+  "version": "0.0.1",
   "description": "Cli of buddha.ts",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "files": [
     "build"
   ],
+  "bin": {
+    "buddha": "./build/index.js"
+  },
   "keywords": [
     "typescript",
     "api",
