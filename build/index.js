@@ -4,6 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const commander_1 = require("commander");
 const constant_1 = require("./constant");
 const service_1 = require("./service");
+const { version } = require('../package.json');
 // lệnh khởi tạo dự án mới
 commander_1.program
     .command('create <type> <name>')
@@ -26,5 +27,7 @@ commander_1.program
     (0, service_1.primary)(`\tnpm run dev`);
     (0, service_1.info)(`\nĐể bắt đầu sử dụng!`);
 });
-// nhận lệnh
+// Sử dụng số phiên bản từ package.json
+commander_1.program.version(version);
+// xử lý các dòng lệnh được truyền vào
 commander_1.program.parse(process.argv);

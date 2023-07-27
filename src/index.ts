@@ -3,6 +3,7 @@
 import { program } from 'commander'
 import { source } from './constant'
 import { info, success, exec, primary, error } from './service'
+const { version } = require('../package.json')
 
 import type { CommandCreateType } from './interface'
 
@@ -36,5 +37,8 @@ program
         info(`\nĐể bắt đầu sử dụng!`)
     })
 
-// nhận lệnh
+// Sử dụng số phiên bản từ package.json
+program.version(version)
+
+// xử lý các dòng lệnh được truyền vào
 program.parse(process.argv)

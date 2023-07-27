@@ -1,6 +1,6 @@
 {
   "name": "buddha-command",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Cli of buddha.ts",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -19,7 +19,7 @@
     "cli"
   ],
   "scripts": {
-    "dev": "ts-node-dev test/index.ts",
+    "dev": "ts-node-dev src/index.ts",
     "build": "rimraf ./build && tsc && copyfiles buddha.txt build",
     "prepare": "npm run build"
   },
