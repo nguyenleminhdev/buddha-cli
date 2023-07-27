@@ -4,4 +4,6 @@ export declare const source: {
     backend: string;
     /**code frontend */
     frontend: string;
+    /**code ext */
+    ext: string;
 };

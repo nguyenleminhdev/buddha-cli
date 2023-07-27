@@ -18,6 +18,9 @@ commander_1.program
         case 'frontend':
             (0, service_1.exec)(`git clone ${constant_1.source.frontend} ${name}`);
             break;
+        case 'ext':
+            (0, service_1.exec)(`git clone ${constant_1.source.ext} ${name}`);
+            break;
         default: return (0, service_1.error)('Lệnh không chính xác!');
     }
     (0, service_1.exec)(`cd ${name} && npm i`);

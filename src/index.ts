@@ -21,6 +21,9 @@ program
             case 'frontend':
                 exec(`git clone ${source.frontend} ${name}`)
                 break
+            case 'ext':
+                exec(`git clone ${source.ext} ${name}`)
+                break
             default: return error('Lệnh không chính xác!')
         }
 
