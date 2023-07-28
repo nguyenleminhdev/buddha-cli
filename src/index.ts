@@ -16,16 +16,18 @@ program
 
         switch (type) {
             case 'backend':
-                exec(`git clone ${source.backend} ${name}`)
+                exec(`git clone --depth=1 ${source.backend} ${name}`)
                 break
             case 'frontend':
-                exec(`git clone ${source.frontend} ${name}`)
+                exec(`git clone --depth=1 ${source.frontend} ${name}`)
                 break
             case 'ext':
-                exec(`git clone ${source.ext} ${name}`)
+                exec(`git clone --depth=1 ${source.ext} ${name}`)
                 break
             default: return error('Lệnh không chính xác!')
         }
+
+        exec(`cd ${name} && rm -rf .git`)
 
         exec(`cd ${name} && npm i`)
 
