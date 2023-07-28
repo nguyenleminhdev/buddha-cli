@@ -1,4 +1,4 @@
-# Buddha Cli
+# Buddha Command
 ```
 ///////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 卐                          _ooOoo_                            卐
@@ -38,13 +38,22 @@
 To start using Buddha.ts in your project, install it via npm:
 
 ```bash
-npm  install -g buddha-cli
+npm install -g buddha-command
 
 // create new buddha backend project
 buddha create backend <NAME>
 
 // create new buddha frontend project
 buddha create frontend <NAME>
+
+// create new buddha chrome extension project
+buddha create ext <NAME>
+
+// check version
+buhha --version
+
+// help
+buddha --help
 ```
 
 ## Usage
