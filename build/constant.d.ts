@@ -6,4 +6,6 @@ export declare const source: {
     frontend: string;
     /**code ext */
     ext: string;
+    /**code electron */
+    electron: string;
 };

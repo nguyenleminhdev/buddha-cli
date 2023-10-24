@@ -24,6 +24,9 @@ program
             case 'ext':
                 exec(`git clone --depth=1 ${source.ext} ${name}`)
                 break
+            case 'electron':
+                exec(`git clone --depth=1 ${source.electron} ${name}`)
+                break
             default: return error('Lệnh không chính xác!')
         }
 

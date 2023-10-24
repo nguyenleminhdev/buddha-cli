@@ -9,4 +9,6 @@ exports.source = {
     frontend: 'https://github.com/nguyenleminhdev/buddha-view.git',
     /**code ext */
     ext: 'https://github.com/nguyenleminhdev/buddha-ext.git',
+    /**code electron */
+    electron: 'https://github.com/nguyenleminhdev/buddha-electron.git',
 };
